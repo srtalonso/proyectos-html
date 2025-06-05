@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Gourmet - La cocina de la abuela</title>
+    <meta name="description" content="Menú Gourmet como lo haría tu abuela">
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; 
+background-color: #ccc; color:rgb(52, 93, 146); margin: 0; padding: 0;">
+    <header style="background-color: #8c163d; color:antiquewhite; 
+        padding: 1.5 em; text-align: center;"> 
+        <!-- Padding -> utilizamos el padding de  1,5 el tamaño de la fuentre actual como relleno-->
+        <!-- em Es una uniad de medida relativa de CSS-->
+        <h1>La cocina de la abuela - Menú Gourmet  </h1>
+        <p style=" font-size: 1.1em;">Explora nuestras delicias exclusivas y caseras realizadas con mucho amor</p>
+    </header>
+
+    <!-- Entrantes -->
+    <main style="padding: 2em;">
+        <section id="entradas" style="margin-bottom: 2em;">  <!-- style="margin-bottom: 2em -> es para la parte inferior-->
+            <h2>Entradas</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 1em; display: flex; align-items: center";>
+                    <img src="pollo-asado.jpeg"alt="Pollo asdo con patatas fritas" width="100"
+                    style="margin-right: 1em; border:8px">
+                    <div>
+                        <strong> Pollo asado 15€</strong><br>
+                        <em>Pollo asado, acompañado de patatas fritas y complemeo a eleguir.</em>
+                    </div>
+                </li>
+            </ul>
+
+
+        </section>
+
+        <!-- Platos principales -->
+        <section id="platos-principales" style="margin-bottom: 2em;">  <!-- style="margin-bottom: 2em -> es para la parte inferior-->
+            <h2>Platos principales</h2>
+                <table style= "width: 100%; border-collapse: collapse;">
+                    <tr style="padding: 12px; border: 1px solid #e26969; ">
+                       <th style="padding: 12px; border 1px solid #ff5733">Nombre</th>
+                       <th style="padding: 12px; border 1px solid #ff5733">Descropción</th> 
+                       <th style="padding: 12px; border 1px solid #ff5733">Precio</th>
+                    </tr>
+
+                    <tr> 
+                       <td style="padding: 12px; border 1px solid #ff5733">Ensalada internacional </td>
+                       <td style="padding: 12px; border 1px solid #ff5733">lechuga, tomate,bonito,esparragos,aceitnas y AOVE</td> 
+                       <td style="padding: 12px; border 1px solid #ff5733">15€</td>
+                    </tr>
+
+                    <tr style=" background-color: aqua;">
+                       <td style="padding: 12px; border 1px solid #ff5733">Lubina al horno</td>
+                       <td style="padding: 12px; border 1px solid #ff5733">Lubina con patatas panaderas y pinimintos de piquillo</td> 
+                       <td style="padding: 12px; border 1px solid #ff5733">27€</td>
+                    </tr>
+                </table>
+        </section>
+
+        <!-- último seccion de-->
+        <section id="postres" style="margin-bottom: 2em;">
+            <h2>Postres</h2>
+            <ul style="display: inline-flex; gap:2em; padding: 0;list-style: none;"> <!-- display: inline-flex -> coloca de manera horizontal el texto-->
+                    <!-- Gap -> agrega los espacios necesirios igualitarios -->
+                <li style="text-align: center;">
+                    <img scr="tiramisu.jpg" alt="tiramisu clásico" width="120" style="border-radius: 8px;">
+                    <p><strong>Tiramisu clásico</strong><br> <em>70€</em></p>
+                </li>
+                <li style="text-align: center;">
+                    <img scr="brownie.jpg" alt="brownie" width="120" style="border-radius: 8px;">
+                    <p><strong>Brownie</strong><br> <em>70€</em></p>
+                </li>
+            </ul>
+
+
+        </section>
+    </main>
+    
+</body>
+</html>
