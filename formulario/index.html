@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Los estilos deben ir debajo del meta -->
+     <link rel="stylesheet" href="styles.css"> <!-- Para enlazar el archivo de los estilos de la web -->
+    <title>formulario de Registro</title>
+</head>
+
+<!-- CREAMOS NUESTRO PRIMER FORMULARIO -->
+<body>
+    <h1>Formulario de registro </h1>
+    <p>Por favor, complete este formulario con la información requerida:</p>
+<!-- Formulario con metodo POST (envio de datos) y destino (action) un URL externa-->
+    <form action="#enlace de pagina de recepción" method="post">
+
+        <!-- Grupo de campos de nuestro form -->
+        <fieldset>
+            <!-- Form id = (deben coincidir) para crear el vinculo entre 'label' e 'input'
+                    Tambien para accesibilidad entre distintos navegadores y usabilidad  
+                    Al hacer click en el 'label' enfoca al 'input' -->
+
+        <!-- Campo de texto para el nombre-->
+            <label for="first-name">
+                Ingrese su nombre:
+                <input id="first-name" type="text" required name="first-name"/ >
+            </label> <!-- -->
+
+        <!-- Campo de texto para el apellido-->
+            <label>
+                Ingrese su apellido:
+                <input id="last-name" type="text" required name="last-name"/> <!-- Ponemos la barra inclinada para para cerrar la etiqueta input -->
+            </label>
+                
+        <!-- Campo de texto para el correo electronico-->
+             <label for="email">
+                Ingrese su email:
+                <input id="email" type="email" required name="email"/>
+            </label> 
+
+        <!-- Campo de texto para el correo electronico-->
+             <label for="new-password">
+                Cree su contraseña:
+                <input id="new-password" pattern="[a-z1- 9]{8,}" required name="password"/>
+                    <!-- PATTERN  "[a-z 0-5]{8,} Nos indica las conciones de la contraseña: de la 'a' a la 'z' y de '1 al 9' -->
+            </label> 
+        </fieldset>
+
+        <fieldset>
+
+            <!-- Indicamos el tipo de boton que vamos a señalar al completar el form  -->
+            
+            <label for="personal-account">
+                <input type="radio" name="account-type" id="personal-account" class="inline"> <!-- Radio button para la cuenta personal -->
+                Personal
+            </label>
+
+             <!-- Radio button para la cuenta personal -->
+              <label for="bussiness-account">
+                <input type="radio" name="account-type" id="bussiness-account" class="inline"> 
+                Empresarial
+            </label>
+
+            <label for="terms-and-conditions">
+                <input type="checkbox" name="terms" id="terms-and-conditions" class="inline"> <!-- Aqui el boton es cuadrdado-->
+                Acepto los <a href="#enlace de terminos y condiciones" target="_blank"> terminos  y condiciones. </a> 
+            </label> 
+        </fieldset>
+
+        <!-- Información adicional-->
+        <fieldset>
+            <!-- Subir archivos de imagen-->
+            <label for="profile-picture">
+            Subir foto de perfil
+                <input type="file" id="profile-picture" name="file">
+                
+            </label>
+
+            <label for="date">
+            Ingresa tu fecha nacimiento:
+                <input type="date" id="date" name="date">
+            </label>
+            <!-- Fecha de nacimiento -->
+    
+        <!-- Lista desplegable con opciones de referencia -->
+            <label for="referrer">
+                ¿Como nos conociste?
+                <select name="refferer" > <!-- El 'select' nos indica que es un desplegable-->
+                        
+                    <!-- Opciones del desplegable-->
+                        <option value="">(Seleciona uno)</option>
+                        <option value="1">Tik Tok</option>
+                        <option value="2">Instagram</option>
+                        <option value="3">Busqueda en internet</option>
+                        <option value="4">Conocido</option>
+                </select>
+             </label>
+
+        </fieldset>
+
+        <!-- Area de texto para una breve explicacion -->
+        <label for="bio"> 
+            Cuentanos sobre ti: 
+        </label> 
+            <textarea id="bio" rows="3" placeholder="Me gustaria programar desde cualquier lugar del mundo" name="bio" required>
+            </textarea>
+      
+
+        <!-- Boton de envio formulario -->
+        <input type="submit" value="Enviar"> <!-- 'value' nos indica que muestra el botón-->
+    </form>   
+</body>
+</html>

@@ -1,0 +1,90 @@
+body{
+    width: 100%; /*Ocupa todo el ancho de la pag */
+    height: 100vh; /* Altura igual a la ventana del navegador actual*/
+    margin: 0; /* Sin margen, todo cuerpo, elimina los margenes por defecto*/
+    font-family: 'Segoe UI', sans-serif; /*Tipo de letra de todo body */
+    background-color:rgb(239, 237, 197); /* color fondo del cuerpo */
+    color:rgb(239, 223, 172); /* Color letras*/
+    font-size: 16px; /* tamaño de la letra*/
+    background-image: url(fondo2.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+label{
+    display:block; /* Cada etiqueta ocupa su propia línea */
+    margin: 0.5rem 0; /*  */
+
+}
+
+/*ENCABEZADOS*/
+h1, p{
+    margin: 0.5em auto; /*Margen vertical y centrdo en horizontal*/
+    text-align: center; /* Centra el texto del contenedor */
+}
+
+/*Contenedor del formulario*/
+form{
+    padding-top: 0em;/* Relleno de la parte superior. Por defecto son 16, pero en este caso lo queremos sojin relleno*/
+    margin: 0 auto; /*Centa horizontalmente el form*/
+    max-width: 500px; /*Para evitar ancho maximo*/
+    min-width: 300px; /*Ancho minimo para los navegadores pequeños*/
+    width: 60vw; /* Ancho relativo al 60% de la ventana*/
+    padding: 1em;
+}
+
+/* Contenedor del fieldset*/
+
+fieldset{
+    border: 0; /* Elimina el borde por defecto*/
+    padding: 0.5rem 0;/*Espaciado interno vertical */
+    border-bottom: 3px solid #3b3b3b; /*Linea decorativa*/ 
+}
+
+fieldset:last-of-type{
+    border-bottom: none; /* Elimina la línea decorativa del ultimo fieldset*/
+
+}
+
+/*Referzo por compatibilidad*/
+label{
+    display: block;
+    margin: 0.5em 0;
+}
+
+input,textarea,select{
+    margin: 10px 0 0 0; /* Espacio superior entre campos*/
+    width: 100%; /* Ancho completo del contenido */
+    min-height: 2em; /*Altura minima para mejor acceso*/
+
+}
+
+/*para dar estilos a una clase*/ 
+.inline{
+    width: unset; /*Hace que no sea fijo */<!-- Fecha de nacimiento -->
+      <label for="fecha">Fecha de nacimiento:</label><br />
+      <input type="date" id="fecha" name="fecha" required /><br /><br />
+    margin: 0 0.5em 0 0; 
+    vertical-align: middle; /* Alinea al centro*/
+}
+
+
+input[type="submit"]{
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;/*altura*/
+    font-size: 1.1rem;
+    background-color: rgb(240, 203, 124);
+    min-width: 300px;
+}
+
+input[type="file"]{
+   padding: 1px 2px; /* Pequeño relleno para mejorar la apariencia*/ 
+}
+
+a{
+    color: darkviolet; /* Colores de enlace*/
+}
