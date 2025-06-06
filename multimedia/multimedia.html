@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audios y Videos</title>
+</head>
+
+<!-- Aqui vamos a introducir audios. Vamos a una web sin copy  -->
+
+<body>
+    <!-- De la siguiente manera lo hacemos con enlace sin descarga en el dipositivo, a continuacion será sin descarga -->
+    <section id="demo-audio">
+        <h2>Demo audio:</h2>
+        <audio controls style="width: 100%; max-width: 400px;">
+            <source src="https://cdn.pixabay.com/audio/2025/06/02/audio_9bd3143db4.mp3" type="audio/mpeg"> 
+            <!-- Si el audio es eliminado, si no navegadorno lo soporta... -->
+            Tu navegador no soporta el audio <code>&lt,audio&lt;</code>
+        </audio>
+    </section>
+
+ 
+  <h1>Reproductor de audio</h1> 
+  <audio controls> <!-- -->
+    <source src="salsa-music.mp3" type="audio/mpeg"> <!-- con type="audio/mpeg" es el tipo de MIME (direfente formatos) 
+            le dice al navegador que tipo de contenido de audio va a manejar -->
+  </audio>  
+
+  <!-- De la manera anterior lo hacemos descargando el audio, acontinuacion sera sin descarga -->
+
+  <!-- Video de forma local, con formato mp4-->
+  <h1>Reproductor de Video </h1>
+    <video width="640" height="360" controls>
+        <source src="video-local.mp4" type="video/mp4"> <!-- Incluir video en ubi local-->
+    </video>
+
+  <!-- video on line -->
+    <section id="demo-audio" style="margin-top: 2em;">
+        <h2> Demo de video:</h2>
+        <video controls width="100%" style="max-width: 500px;" poster="https://via.placeholder.com/500x280.png?text=Mira+el+video"> <!--  poster = Enlaces al video -->
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4"" type="video/mp4"> <!-- Si no soporta el navegdor -->
+            Tu navegador no soporta la etiqueta <code>&lt,audio&lt;</code>. 
+        </video>
+        <p><em>Video de muestra de conejo despertandose. Haz click en reproducir.</em></p>
+    </section>
+
+    <!-- Insertamos video de otra web-->
+
+    <<iframe width="560" height="315" src="https://www.youtube.com/embed/D7y11U4aEGU?si=GV3erJhOLbLl6YHn" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+    picture-in-picture; 
+    web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+
+
+
+</html>
